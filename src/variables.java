@@ -2,16 +2,28 @@ public class variables {
 
     public static void main(String[] args) {
 //        liczby całkowite
-        System.out.println(10);
+        int number10; //deklaracja zmiennej
+        number10 = 10; // inicjalizacja zmiennej
+        System.out.println(number10);
+
 //        liczby zmiennoprzecinkowe
-        System.out.println(10.5);
+        double doubleNumber = 10.5; // deklaracja + inicjalizacja w jednym
+        System.out.println(doubleNumber);
+
 //        tekst
-        System.out.println("Text in Java");
+        String someText = "Text in Java";
+        System.out.println(someText);
+
 //        znak
-        System.out.println('a');
+        char someChar = 'a';
+        System.out.println(someChar);
+
 //        prawda
-        System.out.println(true);
+        boolean trueValue = true;
+        System.out.println(trueValue);
+
 //        fałsz
-        System.out.println(false);
+        boolean falseValue = false;
+        System.out.println(falseValue);
     }
 }
