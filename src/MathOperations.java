@@ -1,4 +1,4 @@
-public class mathOperations {
+public class MathOperations {
 
     public static void main(String[] args) {
         // operatory matematyczne

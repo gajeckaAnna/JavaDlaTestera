@@ -1,4 +1,4 @@
-public class ifology {
+public class Ifology {
 
     public static void main(String[] args) {
         int numOne = 1;

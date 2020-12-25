@@ -1,4 +1,4 @@
-public class switchology {
+public class Switchology {
     public static void main(String[] args) {
         String homePage = "Home";
         String loginPage = "Login";
