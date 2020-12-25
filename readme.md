@@ -15,6 +15,7 @@ I'm learning how to code in Java, mainly by participating in 'Java dla Testera' 
 
 ## Features
 * Data types
+* if & switch statements
 
 To-do list:
 * Classes & objects
