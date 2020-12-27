@@ -12,6 +12,13 @@ public class MainApp {
         System.out.println(ania.firstName + " " + ania.lastName);
         ania.getFullName();
         ania.getAllInfo();
+        System.out.println(ania.getUserAge());
+//        or
+//        alt + enter -> menu -> introduce local variable ->
+        int userAge = ania.getUserAge();
+        System.out.println(userAge);
+        boolean userAdult = ania.isUserAdult();
+        System.out.println(userAdult);
 
 
         User bartek = new User();
