@@ -3,7 +3,7 @@ public class MainApp {
     public static void main(String[] args) {
 
         // type of object [name of the class] + name == new object
-        User ania = new User();
+        User ania = new User(); // constructor
         ania.firstName = "Ania";
         ania.lastName = "Gajecka";
         ania.email = "gajecka.anna@gmail.com";

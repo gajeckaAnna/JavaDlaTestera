@@ -40,4 +40,12 @@ public class User {
     int yourAgePlus10(int userAge){
         return userAge + 10;
     }
+    // Constructor
+    // name is the same as class' name
+    // it starts with a capital letter
+    // doesn't have the return type
+    // if we didn't create the constructor in the class, there will always be a default, creating an empty object
+    User(){
+
+    }
 }
