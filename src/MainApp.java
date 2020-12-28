@@ -23,6 +23,8 @@ public class MainApp {
         ania.howOldAreYou("Ania", 32);
         int aniaAgePlus10 = ania.yourAgePlus10(32);
         System.out.println(aniaAgePlus10);
+        ania.greetings("Ania");
+        ania.greetings(ania.firstName, ania.lastName);
 
 
         User bartek = new User();

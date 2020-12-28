@@ -30,6 +30,10 @@ public class User {
     void greetings(String name){
         System.out.println("Hi " + name + ". Nice to see you!");
     }
+    //    method overloading - name can be the same, as long as the number and/or type of parameters are different
+    void greetings(String firstName, String lastName) {
+        System.out.println("Hi " + firstName + " " + lastName + ". Nice to see you!");
+    }
     void howOldAreYou(String name, int userAge){
         System.out.println("Hi " + name + ". You are " + userAge + " years old.");
     }
