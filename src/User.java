@@ -45,16 +45,13 @@ public class User {
     // it starts with a capital letter
     // doesn't have the return type
     // if we didn't create the constructor in the class, there will always be a default, creating an empty object
-    User(){
-    }
 
-    User(String firstName, String lastName, String email, int age, boolean isAdult){
+    User(String firstName, String lastName, String email, int age){
         // this.object's field = parameter;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.age = age;
-        this.isAdult = isAdult;
-        System.out.println(firstName + " " + lastName + ", " + email + ", " + age + ", " + isAdult);
+        this.isAdult = isUserAdult();
     }
 }
