@@ -47,7 +47,14 @@ public class User {
     // if we didn't create the constructor in the class, there will always be a default, creating an empty object
     User(){
     }
-    User(String firstNameParam, String lastNameParam, String emailParam, int ageParam, boolean isAdultParam){
-        System.out.println(firstNameParam + " " + lastNameParam + ", " + emailParam + ", " + ageParam + ", " + isAdultParam);
+
+    User(String firstName, String lastName, String email, int age, boolean isAdult){
+        // this.object's field = parameter;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.age = age;
+        this.isAdult = isAdult;
+        System.out.println(firstName + " " + lastName + ", " + email + ", " + age + ", " + isAdult);
     }
 }

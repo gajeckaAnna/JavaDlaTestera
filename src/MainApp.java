@@ -27,7 +27,7 @@ public class MainApp {
         ania.greetings(ania.firstName, ania.lastName);
 
         User tim = new User("Tim", "Bossuyt", "bossuytt@outlook.be", 32, true );
-
+        System.out.println("Tim's last name: " + tim.lastName);
 
 
         User bartek = new User();
