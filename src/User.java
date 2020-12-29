@@ -46,6 +46,8 @@ public class User {
     // doesn't have the return type
     // if we didn't create the constructor in the class, there will always be a default, creating an empty object
     User(){
-
+    }
+    User(String firstNameParam, String lastNameParam, String emailParam, int ageParam, boolean isAdultParam){
+        System.out.println(firstNameParam + " " + lastNameParam + ", " + emailParam + ", " + ageParam + ", " + isAdultParam);
     }
 }

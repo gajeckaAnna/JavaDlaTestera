@@ -26,6 +26,9 @@ public class MainApp {
         ania.greetings("Ania");
         ania.greetings(ania.firstName, ania.lastName);
 
+        User tim = new User("Tim", "Bossuyt", "bossuytt@outlook.be", 32, true );
+
+
 
         User bartek = new User();
         bartek.firstName = "Bartek";
