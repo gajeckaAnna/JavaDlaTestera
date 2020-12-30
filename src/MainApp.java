@@ -7,9 +7,7 @@ public class MainApp {
 
         ania.getAllInfo();
 
-
 //        alt + enter -> menu -> introduce local variable ->
-
 //        int userAge = ania.getUserAge();
 //        System.out.println(userAge);
 //        boolean userAdult = ania.isUserAdult();
