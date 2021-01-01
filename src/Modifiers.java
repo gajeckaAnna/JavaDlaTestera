@@ -7,11 +7,11 @@ public class Modifiers {
 //        Access modifiers
 //        default - works in the same package
 //        public - can be accessed in the whole project
-//        protected -
-//        private -
+//        protected
+//        private - access to the field or method only in a range of the class
 
         Person aniaGajecka = new Person("Anna", "Gajecka", "gajecka.anna@gmail.com", 32);
-        System.out.println(aniaGajecka.firstName);
+
         aniaGajecka.getAllInfo();
 
     }
