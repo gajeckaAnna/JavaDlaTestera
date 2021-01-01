@@ -2,11 +2,11 @@ package model;
 
 public class Person {
 
-    public String firstName;
-    public String lastName;
-    public String email;
-    public int age;
-    public boolean isAdult;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private int age;
+    private boolean isAdult;
 
     public void getFullName() {
 
