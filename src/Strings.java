@@ -30,7 +30,7 @@ public class Strings {
 //      7. contains - checks if string contains some given text
         System.out.println(str1.contains("ello"));
 
-//      8. isBlank - checks the length of the string (ignores spaces)
+//      8. isBlank - checks the length of the string (ignores white spaces)
         System.out.println("       ".isBlank());
 
 //      9. isEmpty - checks if the string is empty (doesn't ignore spaces)
@@ -38,6 +38,21 @@ public class Strings {
 
 //      10. replace
         System.out.println(str1.replace("llo", "QWE"));
+
+//      11. replaceAll - replace given letter in a string to a different given
+        System.out.println(str1.replaceAll("l", "x"));
+
+//      12. substring - a subset of another string. In case of substring startIndex is inclusive and endIndex is exclusive
+        System.out.println(str1.substring(1,4));
+
+//      13. length - count of total number of characters
+        String whiteSpaces = "    white spaces    ";
+        System.out.println(whiteSpaces.length());
+
+//      14. strip - strips string of white spaces
+        String strip = whiteSpaces.strip();
+        System.out.println(strip);
+        System.out.println(strip.length());
 
     }
 }
