@@ -8,6 +8,46 @@ public class Person {
     private int age;
     private boolean isAdult;
 
+    public Person(String firstName, String lastName, String email, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.age = age;
+        this.isAdult = isUserAdult();
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isAdult() {
+        return isAdult;
+    }
+
+    public void setAdult(boolean adult) {
+        isAdult = adult;
+    }
+
     public void getFullName() {
 
         System.out.println(firstName + " " + lastName);
@@ -29,11 +69,15 @@ public class Person {
         }
     }
 
-    public Person(String firstName, String lastName, String email, int age) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.age = age;
-        this.isAdult = isUserAdult();
+    public void setEmail(String email) {
+        if(email.endsWith(".ru")){
+            System.out.println("This e-mail domain is not allowed.");
+        } else {
+            this.email = email;
+        }
+    }
+    public String getEmail() {
+        return email;
     }
 }
+

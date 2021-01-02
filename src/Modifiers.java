@@ -14,5 +14,9 @@ public class Modifiers {
 
         aniaGajecka.getAllInfo();
 
+        System.out.println(aniaGajecka.getEmail());
+        aniaGajecka.setEmail("yt.annadayl@gmail.com");
+        System.out.println(aniaGajecka.getEmail());
+
     }
 }
