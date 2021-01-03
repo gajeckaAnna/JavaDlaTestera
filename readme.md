@@ -14,13 +14,8 @@ I'm learning how to code in Java, mainly by participating in 'Java dla Testera' 
 * Java 11
 
 ## Features
-* Data types
-* if & switch statements
-
-To-do list:
-* Classes & objects
-* Access modifiers
-* ...
+* This branch contains third homework: 
+https://github.com/gajeckaAnna/JavaDlaTestera/blob/zadanie_domowe_3/src/model/Bug.java and https://github.com/gajeckaAnna/JavaDlaTestera/blob/zadanie_domowe_3/src/BugMain.java
 
 ## Status
 Project is: _in progress_
