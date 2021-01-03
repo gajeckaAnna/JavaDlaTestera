@@ -70,12 +70,13 @@ public class Person {
     }
 
     public void setEmail(String email) {
-        if(email.endsWith(".ru")){
+        if (email.endsWith(".ru")) {
             System.out.println("This e-mail domain is not allowed.");
         } else {
             this.email = email;
         }
     }
+
     public String getEmail() {
         return email;
     }
