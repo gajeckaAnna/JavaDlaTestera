@@ -12,11 +12,10 @@ public class Bug {
     }
 
     public void setBugDescription(String bugDescription) {
-        if(bugDescription.length() <10){
+        if (bugDescription.length() < 10)
             System.out.println("Not enough characters!");
-        } else {
+        else
             this.bugDescription = bugDescription;
-        }
     }
 
     public String getBugReportedBy() {
@@ -24,11 +23,10 @@ public class Bug {
     }
 
     public void setBugReportedBy(String bugReportedBy) {
-        if (bugReportedBy.contains("@")) {
-            this.bugReportedBy = bugReportedBy;
-        } else {
-            System.out.println("Invalid e-mail!");
-        }
+        if (bugReportedBy.contains("@")) // if (!bugReportedBy.contains("@"))
+            this.bugReportedBy = bugReportedBy; // System.out.println("Invalid e-mail!");
+        else
+            System.out.println("Invalid e-mail!"); //this.bugReportedBy = bugReportedBy;
     }
 
     public void setBugPriority(int bugPriority) {
@@ -77,10 +75,6 @@ public class Bug {
 
     public void closeBug() {
         this.bugStatus = "closed";
-    }
-
-    public int getBugPriority() {
-        return bugPriority;
     }
 }
 
