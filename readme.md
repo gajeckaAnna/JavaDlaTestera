@@ -14,12 +14,20 @@ I'm learning how to code in Java, mainly by participating in 'Java dla Testera' 
 * Java 11
 
 ## Features
-* Data types
+* Data types, math operations
 * if & switch statements
+* Classes, objects, constructors, parameters
+* Access modifiers
 
 To-do list:
-* Classes & objects
-* Access modifiers
+* Tables
+* Static fields & methods  
+* Inheritance
+* Abstraction
+* Interface
+* Collections
+* Streams
+* Exceptions
 * ...
 
 ## Status
