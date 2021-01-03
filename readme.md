@@ -20,7 +20,7 @@ I'm learning how to code in Java, mainly by participating in 'Java dla Testera' 
 * Access modifiers
 
 To-do list:
-* Tables
+* Arrays
 * Static fields & methods  
 * Inheritance
 * Abstraction
