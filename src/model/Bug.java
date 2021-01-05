@@ -7,6 +7,21 @@ public class Bug {
     private int bugPriority;
     private String bugStatus;
 
+    public Bug(String bugDescription, String bugReportedBy, int bugPriority) {
+        this.bugDescription = bugDescription;
+        this.bugReportedBy = bugReportedBy;
+
+        if (bugPriority < 1) {
+            this.bugPriority = 1;
+        } else if (bugPriority > 5) {
+            this.bugPriority = 5;
+        } else {
+            this.bugPriority = bugPriority;
+        }
+
+        this.bugStatus = "open";
+    }
+
     public String getBugDescription() {
         return bugDescription;
     }
@@ -43,21 +58,6 @@ public class Bug {
 
     public void setBugStatus(String bugStatus) {
         this.bugStatus = bugStatus;
-    }
-
-    public Bug(String bugDescription, String bugReportedBy, int bugPriority) {
-        this.bugDescription = bugDescription;
-        this.bugReportedBy = bugReportedBy;
-
-        if (bugPriority < 1) {
-            this.bugPriority = 1;
-        } else if (bugPriority > 5) {
-            this.bugPriority = 5;
-        } else {
-            this.bugPriority = bugPriority;
-        }
-
-        this.bugStatus = "open";
     }
 
     public void showAllBugInfo() {
