@@ -35,7 +35,9 @@ public class Arrays {
         // for(counter; condition; changing of the counter)
 
         for (int i = 0; i < testTeam.length; i++) {
-            System.out.println(testTeam[i]);
+            if (i % 2 ==0) {
+                System.out.println(testTeam[i]);
+            }
         }
 
         for (String name: testTeam) {
