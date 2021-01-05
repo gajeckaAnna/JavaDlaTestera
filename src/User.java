@@ -8,6 +8,21 @@ public class User {
     int age;
     boolean isAdult;
 
+    // Constructor
+    // name is the same as class' name
+    // it starts with a capital letter
+    // doesn't have the return type
+    // if we didn't create the constructor in the class, there will always be a default, creating an empty object
+
+    User(String firstName, String lastName, String email, int age){
+        // this.object's field = parameter;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.age = age;
+        this.isAdult = isUserAdult();
+    }
+
 //    Methods = describes what the object can do
 //    return type + method's name
     void getFullName(){
@@ -40,18 +55,5 @@ public class User {
     int yourAgePlus10(int userAge){
         return userAge + 10;
     }
-    // Constructor
-    // name is the same as class' name
-    // it starts with a capital letter
-    // doesn't have the return type
-    // if we didn't create the constructor in the class, there will always be a default, creating an empty object
 
-    User(String firstName, String lastName, String email, int age){
-        // this.object's field = parameter;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.age = age;
-        this.isAdult = isUserAdult();
-    }
 }
