@@ -63,5 +63,8 @@ public class Arrays {
         System.out.println(number);
 
         System.out.println(++number); // pre-increment
+
+//        * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
     }
 }
