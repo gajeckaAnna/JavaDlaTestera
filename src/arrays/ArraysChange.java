@@ -3,7 +3,7 @@ package arrays;
 public class ArraysChange {
     public static void main(String[] args) {
 
-//        exchange first array object with the last
+        //exchange first array object with the last
         int[] numbers = {1, 2, 3, 4, 5};
 
         // two extra variables
@@ -17,7 +17,7 @@ public class ArraysChange {
             System.out.println(number);
         }
 
-//        one extra variable
+        //one extra variable
         int[] moreNumbers = {3, 5, 7, 9, 11, 13};
         int f = moreNumbers[0];
         moreNumbers[0] = moreNumbers[moreNumbers.length - 1];
@@ -26,6 +26,20 @@ public class ArraysChange {
             System.out.println(i);
         }
 
+        //no extra variables
+        numbers[numbers.length - 1] = numbers[numbers.length - 1] + numbers[0];
+        for (int number : numbers) {
+            System.out.println(number);
+        }
+        numbers[0] = numbers[numbers.length - 1] - numbers[0];
+        for (int number : numbers) {
+            System.out.println(number);
+        }
+
+        numbers[numbers.length - 1] = numbers[numbers.length - 1] - numbers[0];
+        for (int number : numbers) {
+            System.out.println(number);
+        }
 
     }
 }
