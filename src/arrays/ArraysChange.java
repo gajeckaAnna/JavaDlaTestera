@@ -41,5 +41,16 @@ public class ArraysChange {
             System.out.println(number);
         }
 
+        int even = 0;
+        int odd = 0;
+
+        for (int number : numbers) {
+            if(number % 2 == 0) {
+                even += 1;
+            } else {
+                odd += 1;
+            }
+        }
+        System.out.println("Amount of even numbers: " + even + ". Amount of odd numbers: " + odd);
     }
 }
