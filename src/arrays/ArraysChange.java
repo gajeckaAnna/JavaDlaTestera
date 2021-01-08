@@ -41,16 +41,37 @@ public class ArraysChange {
             System.out.println(number);
         }
 
+//      How many even and odd numbers are in array?
+
         int even = 0;
         int odd = 0;
 
         for (int number : numbers) {
-            if(number % 2 == 0) {
+            if (number % 2 == 0) {
                 even += 1;
             } else {
                 odd += 1;
             }
         }
         System.out.println("Amount of even numbers: " + even + ". Amount of odd numbers: " + odd);
+
+//      Sort the numbers
+        int[] mixedNumbers = {2, 4, 1, 9, 5, 2, 4, 0, 5, 8};
+
+        int min;
+
+        for (int i = 0; i < mixedNumbers.length; i++) {
+            min = mixedNumbers[i];
+            for (int j = i + 1; j < mixedNumbers.length; j++) {
+                if (mixedNumbers[j] < min) {
+                    min = mixedNumbers[j];
+                    mixedNumbers[j] = mixedNumbers[i];
+                    mixedNumbers[i] = min;
+                }
+            }
+        }
+        for (int mixedNumber : mixedNumbers) {
+            System.out.println(mixedNumber);
+        }
     }
 }
