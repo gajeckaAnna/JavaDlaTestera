@@ -53,5 +53,22 @@ public class ArraysHomework {
         for (char ace : aces) {
             System.out.println(ace);
         }
+        // 3. exchange first array element with the last, no extra variables
+        int evenNumbers[] = {2, 4, 6, 8, 10};
+        for (int evenNumber : evenNumbers) {
+            System.out.println(evenNumber);
+        }
+        evenNumbers[evenNumbers.length - 1] = evenNumbers[evenNumbers.length - 1] + evenNumbers[0];
+        for (int evenNumber : evenNumbers) {
+            System.out.println(evenNumber);
+        }
+        evenNumbers[0] = evenNumbers[evenNumbers.length - 1] - evenNumbers[0];
+        for (int evenNumber : evenNumbers) {
+            System.out.println(evenNumber);
+        }
+        evenNumbers[evenNumbers.length - 1] = evenNumbers[evenNumbers.length - 1] - evenNumbers[0];
+        for (int evenNumber : evenNumbers) {
+            System.out.println(evenNumber);
+        }
     }
 }
