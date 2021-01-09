@@ -70,5 +70,19 @@ public class ArraysHomework {
         for (int evenNumber : evenNumbers) {
             System.out.println(evenNumber);
         }
+
+        // 4. Even & odd numbers
+        int randomNumbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+        int even = 0;
+        int odd = 0;
+        for (int randomNumber : randomNumbers) {
+            if (randomNumber % 2 == 0) {
+                even += 1;
+            } else {
+                odd += 1;
+            }
+        }
+        System.out.println("Amount of even numbers: " + even + ". Amount of odd numbers: " + odd);
+
     }
 }
