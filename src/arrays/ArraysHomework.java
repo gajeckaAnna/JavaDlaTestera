@@ -4,7 +4,8 @@ public class ArraysHomework {
 
     public static void main(String[] args) {
 
-        // 1. exchange first array object with the last
+        // 1. exchange first array element with the last, using 2 variables
+        // A. numbers
 
         int[] numbers = {10, 9, 8, 7, 6};
 
@@ -21,6 +22,7 @@ public class ArraysHomework {
         for (int number : numbers) {
             System.out.println(number);
         }
+        // B. Names
 
         String[] names = {"Ania", "Marta", "Ula", "Tamara"};
 
@@ -38,8 +40,18 @@ public class ArraysHomework {
             System.out.println(name);
         }
 
+        // 2. exchange first array element with the last, using one variables
 
+        char aces[] = {'a', 's', 'e', 'x', 'u', 'l', 's'};
+        for (char ace : aces) {
+            System.out.println(ace);
+        }
+        char a = aces[0];
+        aces[0] = aces[aces.length -1];
+        aces[aces.length - 1] = a;
 
-
+        for (char ace : aces) {
+            System.out.println(ace);
+        }
     }
 }
