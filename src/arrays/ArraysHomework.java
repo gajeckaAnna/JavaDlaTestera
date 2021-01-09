@@ -22,6 +22,24 @@ public class ArraysHomework {
             System.out.println(number);
         }
 
+        String[] names = {"Ania", "Marta", "Ula", "Tamara"};
+
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        String firstName = names[0];
+        String lastName = names[names.length - 1];
+
+        names[0] = lastName;
+        names[names.length - 1] = firstName;
+
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+
+
 
     }
 }
