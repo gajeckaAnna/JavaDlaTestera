@@ -17,7 +17,7 @@ I'm learning how to code in Java, mainly by participating in 'Java dla Testera' 
 * This branch contains first homework: https://github.com/gajeckaAnna/JavaDlaTestera/blob/zadanie_domowe_1/src/HomeworkOne.java
 
 ## Status
-Project is: _in progress_
+Project is: _done_
 
 
 
