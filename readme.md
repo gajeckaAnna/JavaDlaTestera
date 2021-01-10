@@ -14,21 +14,7 @@ I'm learning how to code in Java, mainly by participating in 'Java dla Testera' 
 * Java 11
 
 ## Features
-* Data types, math operations
-* if & switch statements
-* Classes, objects, constructors, parameters
-* Access modifiers
-
-To-do list:
-* Arrays
-* Static fields & methods  
-* Inheritance
-* Abstraction
-* Interface
-* Collections
-* Streams
-* Exceptions
-* ...
+This branch contains homework number 4: https://github.com/gajeckaAnna/JavaDlaTestera/blob/zadanie_domowe_4/src/arrays/ArraysHomework.java
 
 ## Status
 Project is: _in progress_
