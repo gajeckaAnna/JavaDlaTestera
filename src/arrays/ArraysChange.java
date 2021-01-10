@@ -3,7 +3,7 @@ package arrays;
 public class ArraysChange {
     public static void main(String[] args) {
 
-        //exchange first array object with the last
+        //exchange first array element with the last
         int[] numbers = {1, 2, 3, 4, 5};
 
         // two extra variables
@@ -59,15 +59,27 @@ public class ArraysChange {
         int[] mixedNumbers = {2, 4, 1, 9, 5, 2, 4, 0, 5, 8};
 
         int min;
-
         for (int i = 0; i < mixedNumbers.length; i++) {
             min = mixedNumbers[i];
+            System.out.println("min:" + min);
             for (int j = i + 1; j < mixedNumbers.length; j++) {
                 if (mixedNumbers[j] < min) {
                     min = mixedNumbers[j];
+                    System.out.println("min:" + min);
                     mixedNumbers[j] = mixedNumbers[i];
+                    System.out.println("element at " + j + " = " + mixedNumbers[j]);
                     mixedNumbers[i] = min;
+                    System.out.println("element at " + i + " = " + mixedNumbers[i]);
                 }
+            }
+        }
+        for (int number : mixedNumbers) {
+            System.out.println(number);
+        }
+        int minimum = mixedNumbers[0];
+        for(int i = 1;i<mixedNumbers.length;i++){
+            if(mixedNumbers[i] < minimum) {
+                minimum = mixedNumbers[i];
             }
         }
         for (int mixedNumber : mixedNumbers) {
