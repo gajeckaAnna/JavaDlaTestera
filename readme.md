@@ -18,7 +18,7 @@ I'm learning how to code in Java, mainly by participating in 'Java dla Testera' 
 https://github.com/gajeckaAnna/JavaDlaTestera/blob/zadanie_domowe_2/src/Bug.java and https://github.com/gajeckaAnna/JavaDlaTestera/blob/zadanie_domowe_2/src/BugMain.java
 
 ## Status
-Project is: _in progress_
+Project is: _done_
 
 
 
