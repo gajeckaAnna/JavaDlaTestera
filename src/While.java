@@ -15,5 +15,17 @@ public class While {
             System.out.println(i);
             i++;
         }
+
+//        do {
+//            statement(s)
+//        } while (expression);
+
+        int j = 12;
+
+        do {
+            System.out.println("I'm in do!");
+            System.out.println(j);
+            j++;
+        } while (j > 20);
     }
 }
