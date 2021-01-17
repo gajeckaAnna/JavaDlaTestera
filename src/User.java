@@ -1,5 +1,6 @@
 public class User {
 
+    public static int userCounter = 0; // static fields & methods belong to class, not an object!
 //    Object's fields
 
     String firstName;
@@ -21,6 +22,7 @@ public class User {
         this.email = email;
         this.age = age;
         this.isAdult = isUserAdult();
+        userCounter++;
     }
 
 //    Methods = describes what the object can do
