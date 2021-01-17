@@ -27,6 +27,6 @@ public class MainApp {
         User węsą = new User("Vincent", "", "wesa@munier.be", 40);
         węsą.getAllInfo();
 
-        System.out.println(User.userCounter); // name of the class.name of the static field
+        System.out.println(User.getUserCounter()); // name of the class.name of the static field
     }
 }

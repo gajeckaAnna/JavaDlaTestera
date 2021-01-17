@@ -1,6 +1,6 @@
 public class User {
 
-    public static int userCounter = 0; // static fields & methods belong to class, not an object!
+    private static int userCounter = 0; // static fields & methods belong to class, not an object!
 //    Object's fields
 
     String firstName;
@@ -56,6 +56,10 @@ public class User {
     }
     int yourAgePlus10(int userAge){
         return userAge + 10;
+    }
+
+    public static int getUserCounter() {
+        return userCounter;
     }
 
 }
