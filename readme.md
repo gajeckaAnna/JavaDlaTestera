@@ -18,16 +18,17 @@ I'm learning how to code in Java, mainly by participating in 'Java dla Testera' 
 * if & switch statements
 * Classes, objects, constructors, parameters
 * Access modifiers
+* Arrays
+* Static fields & methods
 
 To-do list:
-* Arrays
-* Static fields & methods  
 * Inheritance
 * Abstraction
 * Interface
 * Collections
 * Streams
 * Exceptions
+* Selenium Intro
 * ...
 
 ## Status
