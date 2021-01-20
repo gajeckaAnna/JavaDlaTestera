@@ -2,7 +2,7 @@ package utils;
 
 public class StringUtils {
 
-        public String getFormattedText(String text) {
+        public static String getFormattedText(String text) {
 
             if(text.length() < 10) {
                 return text;
