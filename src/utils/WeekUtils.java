@@ -2,5 +2,5 @@ package utils;
 
 public class WeekUtils {
 
-    public static String monday = "Monday";
+    public static final String MONDAY = "Monday"; // final = unchangeable, variable written with CAPITAL LETTERS
 }

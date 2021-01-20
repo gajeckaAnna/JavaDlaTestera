@@ -12,10 +12,9 @@ public class UtilsApp {
         String ania = StringUtils.getFormattedText("Ania");
         System.out.println(ania);
 
-        System.out.println(WeekUtils.monday);
+        System.out.println(WeekUtils.MONDAY);
 
-        WeekUtils.monday = "Sunday";
-        System.out.println(WeekUtils.monday);
+        // WeekUtils.MONDAY = "Sunday"; //Cannot assign a value to a final variable
 
     }
 }
