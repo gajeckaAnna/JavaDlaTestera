@@ -12,5 +12,7 @@ public class UtilsApp {
         String ania = StringUtils.getFormattedText("Ania");
         System.out.println(ania);
 
+        System.out.println(WeekUtils.monday);
+
     }
 }
