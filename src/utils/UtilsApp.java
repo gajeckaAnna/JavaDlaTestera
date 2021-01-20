@@ -14,5 +14,8 @@ public class UtilsApp {
 
         System.out.println(WeekUtils.monday);
 
+        WeekUtils.monday = "Sunday";
+        System.out.println(WeekUtils.monday);
+
     }
 }
