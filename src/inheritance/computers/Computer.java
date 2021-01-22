@@ -2,11 +2,11 @@ package inheritance.computers;
 
 public class Computer {
 
-    private String name;
-    private String type;
-    private int hdd;
-    private int ram;
-    private boolean state;
+    protected String name;
+    protected String type;
+    protected int hdd;
+    protected int ram;
+    protected boolean state;
 
     public Computer(String name, String type, int hdd, int ram) {
         this.name = name;
