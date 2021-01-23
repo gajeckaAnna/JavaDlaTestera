@@ -10,5 +10,11 @@ public class Laptop extends Computer {
             System.out.println(name);
         }
 
+    @Override
+        public void switchOn(){
+            System.out.println("Checking batter level");
+            state = true;
+        }
+
     }
 
