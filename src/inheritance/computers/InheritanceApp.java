@@ -9,10 +9,12 @@ public class InheritanceApp {
 
 
         PC officeComputer = new PC("Office Computer", "Thinkpad", 500, 128);
-        Laptop personalLaptop = new Laptop("Personal laptop", "Asus", 300, 128);
+        Laptop personalLaptop = new Laptop("Personal laptop", "Asus", 300, 128, 50);
 
         officeComputer.switchOn();
         System.out.println(officeComputer.getState());
+
+        personalLaptop.setBatteryLevel(0);
 
         personalLaptop.switchOn();
         System.out.println(personalLaptop.getState());
