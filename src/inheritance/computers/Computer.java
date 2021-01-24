@@ -49,12 +49,15 @@ public class Computer {
     }
 
     public void switchOn() {
-        System.out.println("Super, I set the state to true!");
+        System.out.println("Super, I set the computer state to true!");
         state = true;
+        System.out.println("The computer is on.");
     }
 
     public void switchOff() {
+        System.out.println("Super, I set the computer state to false!");
         state = false;
+        System.out.println("The computer is off.");
     }
 
     public boolean getState() {

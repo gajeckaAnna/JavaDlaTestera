@@ -14,12 +14,17 @@ public class InheritanceApp {
         officeComputer.switchOn();
         System.out.println(officeComputer.getState());
 
+        officeComputer.togglePowerSupply();
+        officeComputer.switchOn();
+
+        officeComputer.switchOff();
+        officeComputer.togglePowerSupply();
+
+
         personalLaptop.setBatteryLevel(0);
 
         personalLaptop.switchOn();
         System.out.println(personalLaptop.getState());
-
-        personalLaptop.showComputerName();
 
     }
 }
