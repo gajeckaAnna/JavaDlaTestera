@@ -2,11 +2,11 @@ package inheritance.computers;
 
 public class Laptop extends Computer {
 
-    private int baterryLevel;
+    private int batteryLevel;
 
     public Laptop(String name, String type, int hdd, int ram, int batteryLevel) {
         super(name, type, hdd, ram); // super always comes first!
-        this.baterryLevel = batteryLevel;
+        this.batteryLevel = batteryLevel;
     }
 
     public void showComputerName() {
@@ -16,7 +16,7 @@ public class Laptop extends Computer {
     @Override
     public void switchOn() {
         System.out.println("Checking batter level.");
-        if (baterryLevel > 0) {
+        if (batteryLevel > 0) {
             super.switchOn();
         } else {
             System.out.println("Battery is dead!");
@@ -24,7 +24,7 @@ public class Laptop extends Computer {
     }
 
     public void setBatteryLevel(int newBatteryLevel) {
-        baterryLevel = newBatteryLevel;
+        batteryLevel = newBatteryLevel;
     }
 }
 
