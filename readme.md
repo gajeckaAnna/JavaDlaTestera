@@ -14,7 +14,22 @@ I'm learning how to code in Java, mainly by participating in 'Java dla Testera' 
 * Java 11
 
 ## Features
-This branch contains homework nr 5: https://github.com/gajeckaAnna/JavaDlaTestera/tree/zadanie_domowe_5/src/inheritance/computers
+* Data types, math operations
+* if & switch statements
+* Classes, objects, constructors, parameters
+* Access modifiers
+* Arrays
+* Static fields & methods
+
+To-do list:
+* Inheritance
+* Abstraction
+* Interface
+* Collections
+* Streams
+* Exceptions
+* Selenium Intro
+* ...
 
 ## Status
 Project is: _in progress_
