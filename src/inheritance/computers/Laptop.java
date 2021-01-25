@@ -15,6 +15,8 @@ public class Laptop extends Computer {
 
     @Override
     public void switchOn() {
+        System.out.println("Checking batter level.");
+        if (batteryLevel > 0) {
         System.out.println("Checking battery level.");
         if (batteryLevel > 0) {
             super.switchOn();

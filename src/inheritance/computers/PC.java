@@ -12,7 +12,7 @@ public class PC extends Computer {
     @Override
     public void switchOn() {
         System.out.println("Checking power supply.");
-        if (isPowerSupply == true) {
+        if (isPowerSupply) { // if (isPowerSupply == true) <- is the same
             System.out.println("♫I've got the power!♫ PC is on!");
             super.switchOn();
         } else {
