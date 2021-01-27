@@ -8,7 +8,7 @@ public class Arrays {
         String[] names = new String[5];
 //         values: ["Ania", "Tamara", "Marta", "Ula", "Ola"]
 //         index:   [0,       1,        2,      3   ,   4]
-        System.out.println(names); // [Ljava.lang.String;@1e643faf
+        System.out.println(names); // [Ljava.lang.String;@1e643faf - object reference
         System.out.println(names[0]); // null
 
         String[] testTeam = new String[7];
