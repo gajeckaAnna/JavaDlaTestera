@@ -26,5 +26,8 @@ public class InheritanceApp {
         personalLaptop.switchOn();
         System.out.println(personalLaptop.getState());
 
+        // Object referencing an address in memory where all methods and variables associated with object resides.
+        PC libraryComputer = new PC("BUR 1", "LG", 150, 8);
+        System.out.println(libraryComputer); // inheritance.computers.PC@668bc3d5 - object reference
     }
 }
