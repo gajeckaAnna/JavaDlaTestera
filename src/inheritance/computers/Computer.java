@@ -57,7 +57,7 @@ public class Computer {
     public void switchOff() {
         System.out.println("Super, I set the computer state to false!");
         state = false;
-        System.out.println("The computer is off.");
+        System.out.println("The computer " + name + " is off.");
     }
 
     public boolean getState() {
