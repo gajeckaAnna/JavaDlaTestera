@@ -35,5 +35,9 @@ public class InheritanceApp {
             computer.switchOff();
         }
 
+
+        //We cannot create object from an abstract class
+        //Computer computer = new Computer("Dell", "DD", 500, 125);
+
     }
 }

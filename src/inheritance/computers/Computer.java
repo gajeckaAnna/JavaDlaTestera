@@ -1,6 +1,6 @@
 package inheritance.computers;
 
-public class Computer {
+abstract public class Computer {
 
     protected String name;
     protected String type;
