@@ -26,10 +26,14 @@ public class Laptop extends Computer {
         }
     }
 
-        public void setBatteryLevel(int newBatteryLevel) {
-            batteryLevel = newBatteryLevel;
-        }
+    public void setBatteryLevel(int newBatteryLevel) {
+        batteryLevel = newBatteryLevel;
     }
+
+    public int volumeUp() {
+        return volumeLevel += 5;
+    }
+}
 
 
 

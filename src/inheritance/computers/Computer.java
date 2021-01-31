@@ -7,6 +7,7 @@ abstract public class Computer {
     protected int hdd;
     protected int ram;
     protected boolean state;
+    protected int volumeLevel;
 
     public Computer(String name, String type, int hdd, int ram) {
         this.name = name;
@@ -14,6 +15,7 @@ abstract public class Computer {
         this.hdd = hdd;
         this.ram = ram;
         this.state = false;
+        this.volumeLevel = 0;
     }
 
     public String getName() {
@@ -63,5 +65,8 @@ abstract public class Computer {
     public boolean getState() {
         return state;
     }
+
+    public abstract int volumeUp();
+
 
 }

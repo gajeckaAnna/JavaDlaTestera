@@ -39,5 +39,8 @@ public class InheritanceApp {
         //We cannot create object from an abstract class
         //Computer computer = new Computer("Dell", "DD", 500, 125);
 
+        System.out.println(((Laptop)personalLaptop).volumeUp()); // Type casting
+        System.out.println(personalLaptop.volumeUp()); // volumeUp(); created as abstract method in
+
     }
 }

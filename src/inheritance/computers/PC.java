@@ -25,5 +25,9 @@ public class PC extends Computer {
         System.out.println("Toggled power supply to " + isPowerSupply + "!");
     }
 
+    public int volumeUp() {
+        return volumeLevel += 1;
+    }
+
 }
 
