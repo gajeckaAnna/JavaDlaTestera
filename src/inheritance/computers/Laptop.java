@@ -31,19 +31,54 @@ public class Laptop extends Computer {
     }
 
     public int volumeUp() {
-        return volumeLevel += 5;
+        return volumeUp(5);
     }
 
     @Override
-    public int volumeDown() {
-        volumeLevel -= 2;
-        if (volumeLevel <= 0) {
-            return 0;
-        } else {
+    public int volumeUp(int adjustVolumeLevel) {
+        if (adjustVolumeLevel < 0) {
+            adjustVolumeLevel = 0;
+            System.out.println("U-uh. Positive numbers only.");
+        } if (adjustVolumeLevel == 0) {
+            System.out.println(adjustVolumeLevel + "? Neither high, neither low. My volume level did not change.");
             return volumeLevel;
         }
+        volumeLevel += adjustVolumeLevel;
+        if (volumeLevel > 100) {
+            System.out.println(adjustVolumeLevel + "? Too high! I set my volume level to 100!");
+            return volumeLevel = 100;
+        } if (volumeLevel == 100) {
+            System.out.println("It's already a hundred, dear.");
+            return volumeLevel;
+        }
+            System.out.println(adjustVolumeLevel + "? My new volume level is " + volumeLevel + ".");
+            return volumeLevel;
+        }
+
+        @Override
+        public int volumeDown(){
+            return volumeDown(2);
+        }
+
+        @Override
+        public int volumeDown(int adjustVolumeLevel){
+            if (adjustVolumeLevel <= 0) {
+                adjustVolumeLevel = 0;
+            }
+            volumeLevel -= adjustVolumeLevel;
+            if (volumeLevel <= 0) {
+                System.out.println("Too low! I set my volume level to zero.");
+                return volumeLevel = 0;
+            } else if (adjustVolumeLevel == 0) {
+                System.out.println("Neither high, neither low. My volume level did not change.");
+                return volumeLevel;
+            } else {
+                System.out.println("My new volume level is " + volumeLevel + ".");
+                return volumeLevel;
+            }
+        }
     }
-}
+
 
 
 

@@ -70,5 +70,9 @@ abstract public class Computer {
 
     public abstract int volumeDown();
 
+    public abstract int volumeUp(int adjustVolumeLevel);
+
+    public abstract int volumeDown(int adjustVolumeLevel);
+
 
 }
