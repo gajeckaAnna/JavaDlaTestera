@@ -39,6 +39,7 @@ public class Laptop extends Computer {
         if (adjustVolumeLevel < 0) {
             adjustVolumeLevel = 0;
             System.out.println("U-uh. Positive numbers only.");
+            return volumeLevel;
         } if (adjustVolumeLevel == 0) {
             System.out.println(adjustVolumeLevel + "? Neither high, neither low. My volume level did not change.");
             return volumeLevel;
@@ -51,7 +52,7 @@ public class Laptop extends Computer {
             System.out.println("It's already a hundred, dear.");
             return volumeLevel;
         }
-            System.out.println(adjustVolumeLevel + "? My new volume level is " + volumeLevel + ".");
+            System.out.println(adjustVolumeLevel + "? My new volume level is up to " + volumeLevel + ".");
             return volumeLevel;
         }
 
@@ -62,18 +63,20 @@ public class Laptop extends Computer {
 
         @Override
         public int volumeDown(int adjustVolumeLevel){
-            if (adjustVolumeLevel <= 0) {
+            if (adjustVolumeLevel < 0) {
                 adjustVolumeLevel = 0;
+                System.out.println("U-uh. Positive numbers only.");
+                return volumeLevel;
             }
             volumeLevel -= adjustVolumeLevel;
-            if (volumeLevel <= 0) {
-                System.out.println("Too low! I set my volume level to zero.");
+            if (volumeLevel < 0) {
+                System.out.println(adjustVolumeLevel + "? Too much. I set my volume level to 0!");
                 return volumeLevel = 0;
-            } else if (adjustVolumeLevel == 0) {
-                System.out.println("Neither high, neither low. My volume level did not change.");
+            } if (adjustVolumeLevel == 0) {
+                System.out.println(adjustVolumeLevel + "? Neither high, neither low. My volume level did not change.");
                 return volumeLevel;
             } else {
-                System.out.println("My new volume level is " + volumeLevel + ".");
+                System.out.println("My new volume level is down to " + volumeLevel + ".");
                 return volumeLevel;
             }
         }
