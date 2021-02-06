@@ -58,7 +58,7 @@ public class Laptop extends Computer {
 
         @Override
         public int volumeDown(){
-            return volumeDown(2);
+            return volumeDown(5);
         }
 
         @Override

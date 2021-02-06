@@ -11,50 +11,58 @@ public class AdjustVolume {
         System.out.println(personalLaptop.volumeUp()); // volumeUp(); created as abstract method in Computer
         //personalLaptop.volumeLevel = 10
 
-        //adjustVolumeLevel - volumeUp
-        personalLaptop.volumeUp(20);
-        System.out.println(personalLaptop.volumeLevel); //personalLaptop.volumeLevel = 30
+        //personalLaptop.volumeUp
+        personalLaptop.volumeUp(20); //personalLaptop.volumeLevel = 30
 
-        personalLaptop.volumeUp(20);
-        System.out.println(personalLaptop.volumeLevel); //personalLaptop.volumeLevel = 50
+        personalLaptop.volumeUp(20); //personalLaptop.volumeLevel = 50
 
-        personalLaptop.volumeUp(0);
-        System.out.println(personalLaptop.volumeLevel); //personalLaptop.volumeLevel = 50
+        personalLaptop.volumeUp(0); //personalLaptop.volumeLevel = 50
 
-        personalLaptop.volumeUp(120);
-        System.out.println(personalLaptop.volumeLevel); //personalLaptop.volumeLevel = 100
+        personalLaptop.volumeUp(120); //personalLaptop.volumeLevel = 100
 
-        personalLaptop.volumeUp(-70); //
-        System.out.println(personalLaptop.volumeLevel);
-
-        personalLaptop.volumeUp(55);
-        System.out.println(personalLaptop.volumeLevel);
+        personalLaptop.volumeUp(-70); //personalLaptop.volumeLevel = 100
 
         //personalLaptop.volumeDown
-        personalLaptop.volumeDown(-70);
-        System.out.println(personalLaptop.volumeLevel);
+        personalLaptop.volumeDown(-70); //personalLaptop.volumeLevel = 100
 
-        personalLaptop.volumeDown(20);
-        System.out.println(personalLaptop.volumeLevel);
+        personalLaptop.volumeDown(30); //personalLaptop.volumeLevel = 70
 
-        personalLaptop.volumeDown(0);
-        System.out.println(personalLaptop.volumeLevel);
+        personalLaptop.volumeDown(0);//personalLaptop.volumeLevel = 70
 
-        personalLaptop.volumeDown(50);
-        System.out.println(personalLaptop.volumeLevel);
+        personalLaptop.volumeDown(50);//personalLaptop.volumeLevel = 20
 
-        personalLaptop.volumeDown();
-        System.out.println(personalLaptop.volumeLevel);
+        personalLaptop.volumeDown(); //personalLaptop.volumeLevel = 18
 
-        Computer officeComputer = new PC("Office Computer", "Lenovo", 100, 128);
+        personalLaptop.volumeDown(30); //personalLaptop.volumeLevel = 0
 
 
-//        System.out.println(libraryComputer.volumeUp());
-//        System.out.println(libraryComputer.volumeUp());
-//
-//        System.out.println(libraryComputer.volumeDown());
-//        System.out.println(libraryComputer.volumeDown());
-//        System.out.println(libraryComputer.volumeDown());
+        Computer officeComputer = new PC("Office Computer", "Lenovo", 1000, 128);
+
+        //officeComputer.volumeUp
+        officeComputer.volumeUp(); //volumeLevel = 1
+
+        officeComputer.volumeUp(19); //volumeLevel = 20
+
+        officeComputer.volumeUp(-20); //volumeLevel = 20
+
+        officeComputer.volumeUp(0); //volumeLevel = 20
+
+        officeComputer.volumeUp(90); //volumeLevel = 100
+
+        //officeComputer.volumeDown
+        officeComputer.volumeDown(); //volumeLevel = 99
+
+        officeComputer.volumeDown(10); //volumeLevel = 89
+
+        officeComputer.volumeDown(-10); //volumeLevel = 89
+
+        officeComputer.volumeDown(49); //volumeLevel = 40
+
+        officeComputer.volumeDown(0);
+
+        officeComputer.volumeDown(50); //volumeLevel = 0
+
+
 
 
 

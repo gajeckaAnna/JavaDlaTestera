@@ -38,18 +38,18 @@ public class PC extends Computer {
     public int volumeUp(int adjustVolumeLevel) {
         if (adjustVolumeLevel < 0) {
             adjustVolumeLevel = 0;
-            System.out.println("U-uh. Positive numbers only.");
+            System.out.println("Ugh, no. We don't appreciate negative vibes around here.");
             return volumeLevel;
         } if (adjustVolumeLevel == 0) {
-            System.out.println(adjustVolumeLevel + "? Neither high, neither low. My volume level did not change.");
+            System.out.println(adjustVolumeLevel + "? Boy, oh boy. My volume level did not change.");
             return volumeLevel;
         }
         volumeLevel += adjustVolumeLevel;
         if (volumeLevel > 100) {
-            System.out.println(adjustVolumeLevel + "? Too high! I set my volume level to 100!");
+            System.out.println(adjustVolumeLevel + "? Oh, you sweet summer child. I set my volume level to 100!");
             return volumeLevel = 100;
         } if (volumeLevel == 100) {
-            System.out.println("It's already a hundred, dear.");
+            System.out.println("Ring, a ding, ding. It's already a hundred, dear.");
             return volumeLevel;
         }
         System.out.println(adjustVolumeLevel + "? My new volume level is up to " + volumeLevel + ".");
@@ -60,18 +60,19 @@ public class PC extends Computer {
     public int volumeDown(int adjustVolumeLevel){
         if (adjustVolumeLevel < 0) {
             adjustVolumeLevel = 0;
-            System.out.println("U-uh. Positive numbers only.");
+            System.out.println("Ugh, no. We don't appreciate negative vibes around here.");
             return volumeLevel;
         }
         volumeLevel -= adjustVolumeLevel;
         if (volumeLevel < 0) {
-            System.out.println(adjustVolumeLevel + "? Too much. I set my volume level to 0!");
+            System.out.println(adjustVolumeLevel + "? I have standards I don't plan on lowering for anybody. " +
+                    "I set my volume level to 0!");
             return volumeLevel = 0;
         } if (adjustVolumeLevel == 0) {
-            System.out.println(adjustVolumeLevel + "? Neither high, neither low. My volume level did not change.");
+            System.out.println(adjustVolumeLevel + "? Guurl. My volume level did not change.");
             return volumeLevel;
         } else {
-            System.out.println("My new volume level is down to " + volumeLevel + ".");
+            System.out.println(adjustVolumeLevel + "? My new volume level is down to " + volumeLevel + ".");
             return volumeLevel;
         }
     }
