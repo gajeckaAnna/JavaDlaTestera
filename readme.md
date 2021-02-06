@@ -14,22 +14,10 @@ I'm learning how to code in Java, mainly by participating in 'Java dla Testera' 
 * Java 11
 
 ## Features
-* Data types, math operations
-* if & switch statements
-* Classes, objects, constructors, parameters
-* Access modifiers
-* Arrays
-* Static fields & methods
-
-To-do list:
-* Inheritance
-* Abstraction
-* Interface
-* Collections
-* Streams
-* Exceptions
-* Selenium Intro
-* ...
+This branch contains homework 6:
+* https://github.com/gajeckaAnna/JavaDlaTestera/blob/zadanie_domowe_6/src/inheritance/computers/Laptop.java
+* https://github.com/gajeckaAnna/JavaDlaTestera/blob/zadanie_domowe_6/src/inheritance/computers/PC.java
+* https://github.com/gajeckaAnna/JavaDlaTestera/blob/zadanie_domowe_6/src/inheritance/computers/AdjustVolume.java
 
 ## Status
 Project is: _in progress_
