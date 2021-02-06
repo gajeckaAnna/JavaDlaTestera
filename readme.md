@@ -20,10 +20,10 @@ I'm learning how to code in Java, mainly by participating in 'Java dla Testera' 
 * Access modifiers
 * Arrays
 * Static fields & methods
-
-To-do list:
 * Inheritance
 * Abstraction
+
+To-do list:
 * Interface
 * Collections
 * Streams
