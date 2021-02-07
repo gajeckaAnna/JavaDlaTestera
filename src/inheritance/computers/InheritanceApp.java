@@ -38,5 +38,12 @@ public class InheritanceApp {
         //We cannot create object from an abstract class
         //Computer computer = new Computer("Dell", "DD", 500, 125);
 
+        //Interfaces
+        ((Laptop) personalLaptop).playMusic();
+        ((Laptop) personalLaptop).pauseMusic();
+        ((Laptop) personalLaptop).stopMusic();
+
+        ((Laptop) personalLaptop).sayHelloFromMusic();
+
     }
 }
