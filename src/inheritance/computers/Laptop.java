@@ -1,6 +1,6 @@
 package inheritance.computers;
 
-public class Laptop extends Computer implements Music {
+public class Laptop extends Computer implements Music, Video {
 
     private int batteryLevel;
 
@@ -95,6 +95,21 @@ public class Laptop extends Computer implements Music {
     public void stopMusic() {
         System.out.println("STOP MUSIC #");
 
+    }
+
+    @Override
+    public void playVideo() {
+        System.out.println("PLAY VIDEO >");
+    }
+
+    @Override
+    public void pauseVideo() {
+        System.out.println("PAUSE VIDEO ||");
+    }
+
+    @Override
+    public void stopVideo() {
+        System.out.println("STOP VIDEO #");
     }
 }
 

@@ -45,5 +45,11 @@ public class InheritanceApp {
 
         ((Laptop) personalLaptop).sayHelloFromMusic();
 
+        ((Laptop) personalLaptop).playVideo();
+        ((Laptop) personalLaptop).pauseVideo();
+        ((Laptop) personalLaptop).stopVideo();
+
+        ((Laptop) personalLaptop).sayHelloFromVideo();
+
     }
 }
