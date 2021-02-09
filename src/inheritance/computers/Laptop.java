@@ -98,6 +98,11 @@ public class Laptop extends Computer implements Music, Video {
     }
 
     @Override
+    public void sayHello() {
+        Music.super.sayHello();
+    }
+
+    @Override
     public void playVideo() {
         System.out.println("PLAY VIDEO >");
     }
@@ -111,6 +116,8 @@ public class Laptop extends Computer implements Music, Video {
     public void stopVideo() {
         System.out.println("STOP VIDEO #");
     }
+
+
 }
 
 

@@ -28,6 +28,10 @@ public interface Music {
         System.out.println("Hello from private static!");
     }
 
+    default void sayHello(){
+        System.out.println("Hello, hello! I don't know why you say goodbye, I say hello.");
+    }
+
 //    A class can implement more than one interface.
 
 //    An interface can extends another interface or interfaces (more than one interface) .

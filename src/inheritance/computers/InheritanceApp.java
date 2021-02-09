@@ -50,6 +50,7 @@ public class InheritanceApp {
         ((Laptop) personalLaptop).stopVideo();
 
         ((Laptop) personalLaptop).sayHelloFromVideo();
+        ((Laptop) personalLaptop).sayHello();
 
     }
 }
