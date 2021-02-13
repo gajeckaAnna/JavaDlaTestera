@@ -3,10 +3,12 @@ package inheritance.computers;
 public class AdjustVolume {
     public static void main(String[] args) {
 
-        Computer personalLaptop = new Laptop("Personal laptop", "Asus", 300, 8, 99);
+        Hdd hdd = new Hdd("Asus", 128);
+        Ram ram = new Ram("IntEl", 8);
+        Computer personalLaptop = new Laptop("Personal laptop", "Asus", hdd, ram, 99);
 
         //personalLaptop.volumeLevel = 0
-        System.out.println(((Laptop)personalLaptop).volumeUp()); // Type casting
+        System.out.println(((Laptop) personalLaptop).volumeUp()); // Type casting
         //personalLaptop.volumeLevel = 5
         System.out.println(personalLaptop.volumeUp()); // volumeUp(); created as abstract method in Computer
         //personalLaptop.volumeLevel = 10
@@ -36,7 +38,7 @@ public class AdjustVolume {
         personalLaptop.volumeDown(30); //personalLaptop.volumeLevel = 0
 
 
-        Computer officeComputer = new PC("Office Computer", "Lenovo", 1000, 128);
+        Computer officeComputer = new PC("Office Computer", "Lenovo", hdd, ram);
 
         //officeComputer.volumeUp
         officeComputer.volumeUp(); //volumeLevel = 1
