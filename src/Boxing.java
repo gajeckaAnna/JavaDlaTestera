@@ -12,6 +12,12 @@ public class Boxing {
         Boolean bl;
 
         int number = 10;
+
+        // autoboxing
         Integer intNumber = new Integer(10);
+        Integer intCipher = Integer.valueOf(10);
+
+        //unboxing
+        int newNumber = intNumber.intValue();
     }
 }
