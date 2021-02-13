@@ -28,5 +28,12 @@ public class MainApp {
         węsą.getAllInfo();
 
         System.out.println(User.getUserCounter()); // name of the class.name of the static field
+
+        //toString(), equals(), hashCode()
+        User tim = new User("Tim", "Bossuyt", "timbo@crm.be", 32);
+        System.out.println(tim);
+
+        User tim2 = new User("Tim Marvolo", "Bossuyt", "timbo@crm.be", 32);
+        System.out.println(tim.equals(tim2));
     }
 }
