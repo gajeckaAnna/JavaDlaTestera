@@ -4,34 +4,27 @@ I'm learning how to code in Java, to make my way into test automation world.
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Features](#features)  
+* [Features](#features)
 * [Status](#status)
 
 ## General info
-I'm learning how to code in Java, mainly by participating in 'Java dla Testera' (Java for testers, https://javadlatestera.pl/), a course by Bartosz Kita.
+
+I'm learning how to code in Java, mainly by participating in 'Java dla Testera' (Java for
+testers, https://javadlatestera.pl/), a course by Bartosz Kita.
 
 ## Technologies
+
 * Java 11
 
 ## Features
-* Data types, math operations
-* if & switch statements
-* Classes, objects, constructors, parameters
-* Access modifiers
-* Arrays
-* Static fields & methods
-* Inheritance
-* Abstraction
 
-To-do list:
-* Interface
-* Collections
-* Streams
-* Exceptions
-* Selenium Intro
-* ...
+## Objectives
+
+* create a new class BugReporter, containing first name, last name and email
+* create setters & getters, toString(), equals(), hashCode() methods; add email validation
 
 ## Status
+
 Project is: _in progress_
 
 

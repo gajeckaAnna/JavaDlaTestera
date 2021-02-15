@@ -42,12 +42,6 @@ public class Bug {
         return bugReportedBy;
     }
 
-    public void setBugReportedBy(String bugReportedBy) {
-        if (bugReportedBy.contains("@")) // if (!bugReportedBy.contains("@"))
-            this.bugReportedBy = bugReportedBy; // System.out.println("Invalid e-mail!");
-        else
-            System.out.println("Invalid e-mail!"); //this.bugReportedBy = bugReportedBy;
-    }
 
     public void setBugPriority(int bugPriority) {
         if (bugPriority < 1 || bugPriority > 5) {
