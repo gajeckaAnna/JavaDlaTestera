@@ -10,9 +10,8 @@ public class BugMain {
 
         Bug beetle = new Bug("This is the bug description", 2, ania);
         beetle.showAllBugInfo();
-        System.out.println(beetle.getBugPriority());
-        beetle.closeBug();
-        beetle.showBugStatus();
+//        beetle.closeBug();
+        beetle.setBugStatus("rejected");
         beetle.showAllBugInfo();
 
 //        Bug ladybug = new Bug("This is another bug description", 6, vincent);

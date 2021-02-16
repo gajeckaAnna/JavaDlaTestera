@@ -1,6 +1,6 @@
 package model;
 
-public class Bug {
+public class Bug implements ConsoleNotification {
 
     private String bugDescription;
     private int bugPriority;
@@ -32,11 +32,6 @@ public class Bug {
             this.bugDescription = bugDescription;
     }
 
-    public String getBugReportedBy() {
-        return bugReportedBy;
-    }
-
-
     public void setBugPriority(int bugPriority) {
         if (bugPriority < 1 || bugPriority > 5) {
             System.out.println("Set value between 1 and 5 as bug priority!");
@@ -55,6 +50,7 @@ public class Bug {
 
     public void setBugStatus(String bugStatus) {
         this.bugStatus = bugStatus;
+        notifyStatusChange();
     }
 
     public void showAllBugInfo() {
@@ -68,14 +64,17 @@ public class Bug {
     }
 
     public void showBugStatus() {
-        System.out.println("model.Bug status: " + bugStatus);
+        System.out.println("Bug status: " + bugStatus + ".");
     }
 
     public void closeBug() {
         this.bugStatus = "closed";
     }
 
-
+    @Override
+    public void notifyStatusChange() {
+        System.out.println("The bug status has changed to " + bugStatus.toUpperCase() + ".");
+    }
 }
 
 

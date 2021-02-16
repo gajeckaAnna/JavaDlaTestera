@@ -20,8 +20,10 @@ testers, https://javadlatestera.pl/), a course by Bartosz Kita.
 
 ## Objectives
 
-* create a new class BugReporter, containing first name, last name and email
+* create a new class BugReporter, containing first name, last name and email of the person who reports the bug
 * create setters & getters, toString(), equals(), hashCode() methods; add email validation
+* create a new interface ConsoleNotification; add notifyStatusChange() which will be informing about the bug status
+  changes
 
 ## Status
 
