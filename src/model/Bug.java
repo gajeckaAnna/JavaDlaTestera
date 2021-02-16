@@ -5,11 +5,9 @@ public class Bug {
     private String bugDescription;
     private int bugPriority;
     private String bugStatus;
-    private String firstName;
-    private String lastName;
-    private String bugReportedBy;
+    private BugReporter BugReporter;
 
-    public Bug(String bugDescription, int bugPriority, String firstName, String lastName, String bugReportedBy) {
+    public Bug(String bugDescription, int bugPriority, BugReporter BugReporter) {
         this.bugDescription = bugDescription;
 
         if (bugPriority < 1) {
@@ -19,11 +17,7 @@ public class Bug {
         } else {
             this.bugPriority = bugPriority;
         }
-
-        this.firstName = firstName;
-        this.firstName = lastName;
-        this.bugReportedBy = bugReportedBy;
-
+        this.BugReporter = BugReporter;
         this.bugStatus = "open";
     }
 
@@ -64,12 +58,13 @@ public class Bug {
     }
 
     public void showAllBugInfo() {
-        System.out.println("model.Bug description: " + bugDescription + "; reported by: " + bugReportedBy +
-                "; bug priority: " + bugPriority + "; model.Bug status: " + bugStatus + ".");
+        System.out.println("Bug description: " + bugDescription + "; reported by: " + BugReporter.firstName + " "
+                + BugReporter.lastName + ", " + BugReporter.email +
+                "; bug priority: " + bugPriority + "; Bug status: " + bugStatus + ".");
     }
 
     public void showBugReportedBy() {
-        System.out.println("Reported by: " + bugReportedBy);
+        System.out.println("Reported by: " + BugReporter);
     }
 
     public void showBugStatus() {
