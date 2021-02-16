@@ -49,8 +49,24 @@ public class Bug implements ConsoleNotification {
     }
 
     public void setBugStatus(String bugStatus) {
-        this.bugStatus = bugStatus;
-        notifyStatusChange();
+        switch (bugStatus) {
+            case "open":
+            case "closed":
+            case "rejected":
+            case "on hold":
+            case "submitted":
+            case "ready 4 test":
+            case "test in progress":
+            case "test completed OK":
+            case "test completed NOK":
+                this.bugStatus = bugStatus;
+                notifyStatusChange();
+                break;
+            default:
+                System.out.println("Allowed bug statuses: open, closed, rejected, on hold, submitted, ready 4 test," +
+                        " test in progress, test completed OK, test completed NOK.");
+        }
+
     }
 
     public void showAllBugInfo() {
@@ -69,6 +85,7 @@ public class Bug implements ConsoleNotification {
 
     public void closeBug() {
         this.bugStatus = "closed";
+        notifyStatusChange();
     }
 
     @Override

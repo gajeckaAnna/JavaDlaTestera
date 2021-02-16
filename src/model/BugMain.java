@@ -7,12 +7,13 @@ public class BugMain {
 
         BugReporter ania = new BugReporter("Ania", "Gajecka", "gajecka.anna@gmail.com");
 //        BugReporter vincent = new BugReporter("Vincent", "Marvolo", "vincent.marvolo@fod.be");
+//        BugReporter bart = new BugReporter("Bart", "Esbeek", "bart@fod.be");
 
         Bug beetle = new Bug("This is the bug description", 2, ania);
         beetle.showAllBugInfo();
-//        beetle.closeBug();
+        beetle.setBugStatus("unknown");
         beetle.setBugStatus("rejected");
-        beetle.showAllBugInfo();
+        beetle.closeBug();
 
 //        Bug ladybug = new Bug("This is another bug description", 6, vincent);
 //        ladybug.showAllBugInfo();
