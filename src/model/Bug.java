@@ -15,6 +15,7 @@ public class Bug implements ConsoleNotification {
     }
 
     public String getBugDescription() {
+        System.out.println("Bug description: " + bugDescription + ".");
         return bugDescription;
     }
 
@@ -26,6 +27,7 @@ public class Bug implements ConsoleNotification {
     }
 
     public int getBugPriority() {
+        System.out.println("Bug priority is " + bugPriority + ".");
         return bugPriority;
     }
 
@@ -39,6 +41,7 @@ public class Bug implements ConsoleNotification {
     }
 
     public String getBugStatus() {
+        System.out.println("Bug status: " + bugStatus + ".");
         return bugStatus;
     }
 
