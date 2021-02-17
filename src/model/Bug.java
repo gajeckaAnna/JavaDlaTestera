@@ -9,15 +9,7 @@ public class Bug implements ConsoleNotification {
 
     public Bug(String bugDescription, int bugPriority, BugReporter BugReporter) {
         this.bugDescription = bugDescription;
-
-        if (bugPriority < 1) {
-            this.bugPriority = 1;
-        } else if (bugPriority > 5) {
-            this.bugPriority = 5;
-        } else {
-            this.bugPriority = bugPriority;
-        }
-
+        this.setBugPriority(bugPriority);
         this.BugReporter = BugReporter;
         this.bugStatus = "open";
     }
@@ -40,6 +32,7 @@ public class Bug implements ConsoleNotification {
     public void setBugPriority(int bugPriority) {
         if (bugPriority < 1 || bugPriority > 5) {
             System.out.println("Set value between 1 and 5 as bug priority!");
+            this.bugPriority = bugPriority > 5 ? 5 : 1;
         } else {
             this.bugPriority = bugPriority;
         }
