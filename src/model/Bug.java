@@ -8,7 +8,7 @@ public class Bug implements ConsoleNotification {
     private BugReporter BugReporter;
 
     public Bug(String bugDescription, int bugPriority, BugReporter BugReporter) {
-        this.bugDescription = bugDescription;
+        this.setBugDescription(bugDescription);
         this.setBugPriority(bugPriority);
         this.BugReporter = BugReporter;
         this.bugStatus = "open";
@@ -75,7 +75,9 @@ public class Bug implements ConsoleNotification {
     }
 
     public void showBugReportedBy() {
-        System.out.println("Reported by: " + BugReporter);
+        System.out.println("Reported by: " + BugReporter.firstName + " "
+                + BugReporter.lastName + ", " + BugReporter.email +
+                ";");
     }
 
     @Override
