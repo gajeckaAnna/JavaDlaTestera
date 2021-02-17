@@ -11,7 +11,7 @@ public class BugReporter {
     public BugReporter(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.email = email;
+        this.setEmail(email);
     }
 
     public String getFirstName() {
