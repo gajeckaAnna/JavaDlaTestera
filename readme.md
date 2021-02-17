@@ -24,7 +24,7 @@ testers, https://javadlatestera.pl/), a course by Bartosz Kita.
 * create setters & getters, toString(), equals(), hashCode() methods; add email validation
 * create a new interface ConsoleNotification; add notifyStatusChange() which will be informing about the bug status
   changes
-
+* add toString() to Bug.class
 ## Status
 
 Project is: _in progress_

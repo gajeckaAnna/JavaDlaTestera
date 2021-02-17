@@ -17,6 +17,7 @@ public class Bug implements ConsoleNotification {
         } else {
             this.bugPriority = bugPriority;
         }
+
         this.BugReporter = BugReporter;
         this.bugStatus = "open";
     }
@@ -32,16 +33,16 @@ public class Bug implements ConsoleNotification {
             this.bugDescription = bugDescription;
     }
 
+    public int getBugPriority() {
+        return bugPriority;
+    }
+
     public void setBugPriority(int bugPriority) {
         if (bugPriority < 1 || bugPriority > 5) {
             System.out.println("Set value between 1 and 5 as bug priority!");
         } else {
             this.bugPriority = bugPriority;
         }
-    }
-
-    public int getBugPriority() {
-        return bugPriority;
     }
 
     public String getBugStatus() {
@@ -69,6 +70,11 @@ public class Bug implements ConsoleNotification {
 
     }
 
+    public void closeBug() {
+        this.bugStatus = "closed";
+        notifyStatusChange();
+    }
+
     public void showAllBugInfo() {
         System.out.println("Bug description: " + bugDescription + "; reported by: " + BugReporter.firstName + " "
                 + BugReporter.lastName + ", " + BugReporter.email +
@@ -79,18 +85,19 @@ public class Bug implements ConsoleNotification {
         System.out.println("Reported by: " + BugReporter);
     }
 
-    public void showBugStatus() {
-        System.out.println("Bug status: " + bugStatus + ".");
-    }
-
-    public void closeBug() {
-        this.bugStatus = "closed";
-        notifyStatusChange();
-    }
-
     @Override
     public void notifyStatusChange() {
         System.out.println("The bug status has changed to " + bugStatus.toUpperCase() + ".");
+    }
+
+    @Override
+    public String toString() {
+        return "Bug{" +
+                "bugDescription='" + bugDescription + '\'' +
+                ", bugPriority=" + bugPriority +
+                ", bugStatus='" + bugStatus + '\'' +
+                ", BugReporter=" + BugReporter +
+                '}';
     }
 }
 
