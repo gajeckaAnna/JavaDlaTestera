@@ -17,12 +17,13 @@ testers, https://javadlatestera.pl/), a course by Bartosz Kita.
 * Java 11
 
 ## Features
+This branch contain homework 7: https://github.com/gajeckaAnna/JavaDlaTestera/tree/zadanie_domowe_7/src/model
 
 ## Tasks
 
-* create a new class BugReporter, containing objectsL: firstName, lastName and email of the person who reports the bug
+* create a new class BugReporter, containing objectsL: firstName, lastName and email of the person, who reports the bug
 * create setters & getters, toString(), equals(), hashCode() methods; move the email validation from the Bug class to
-  BugReporter
+  BugReporter class
 * create a new interface ConsoleNotification; add notifyStatusChange() which will automatically be informing about the
   bug status change
 * add toString() to Bug.class
