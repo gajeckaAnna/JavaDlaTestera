@@ -16,23 +16,37 @@ testers, https://javadlatestera.pl/), a course by Bartosz Kita.
 
 ## Features
 
--[x] Data types, math operations
--[x] if & switch statements
--[x] Classes, objects, constructors, parameters
--[x] Access modifiers
--[x] Arrays
--[x] Static fields & methods
--[x] Inheritance
--[x] Abstraction
--[x] Interface
+*
+    -[x] Data types, math operations
+*
+    -[x] if & switch statements
+*
+    -[x] Classes, objects, constructors, parameters
+*
+    -[x] Access modifiers
+*
+    -[x] Arrays
+*
+    -[x] Static fields & methods
+*
+    -[x] Inheritance
+*
+    -[x] Abstraction
+*
+    -[x] Interface
 
 To-do list:
 
--[ ] Collections
--[ ] Streams
--[ ] Exceptions
--[ ] Selenium Intro
--[ ] ...
+*
+    -[ ] Collections
+*
+    -[ ] Streams
+*
+    -[ ] Exceptions
+*
+    -[ ] Selenium Intro
+*
+    -[ ] ...
 
 ## Status
 
