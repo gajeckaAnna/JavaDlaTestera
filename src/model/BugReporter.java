@@ -38,7 +38,7 @@ public class BugReporter {
         if (email.contains("@"))
             this.email = email;
         else
-            System.out.println("Invalid e-mail!");
+            System.out.println("Invalid e-mail! Please include '@'.");
     }
 
     @Override
