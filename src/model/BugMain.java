@@ -41,14 +41,10 @@ public class BugMain {
         cockroach.setBugDescription("This is a longer bug description.");
         System.out.println(cockroach.getBugDescription());
 
-//        cockroach.setBugReportedBy("vincent!mun.be");
-//        System.out.println(cockroach.getBugReportedBy());
-//        cockroach.setBugReportedBy("vincent@mun.com");
-//        System.out.println(cockroach.getBugReportedBy());
-
         cockroach.setBugPriority(-1);
+        cockroach.getBugPriority();
         cockroach.setBugPriority(6);
-        cockroach.setBugPriority(4);
+        cockroach.getBugPriority();
 
     }
 }
