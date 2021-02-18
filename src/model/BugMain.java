@@ -5,6 +5,12 @@ import model.Bug;
 public class BugMain {
     public static void main(String[] args) {
 
+        BugReporter bart = new BugReporter("Bart", "Esbeek", "bart.at.fod.be");
+        System.out.println(bart);
+
+        bart.setEmail("bart@fod.be");
+        System.out.println(bart);
+
         BugReporter ania = new BugReporter("Ania", "Gajecka", "gajecka.anna@gmail.com");
 
         Bug beetle = new Bug("This is the bug description", 2, ania);
@@ -15,8 +21,6 @@ public class BugMain {
         beetle.showBugReportedBy();
         beetle.closeBug();
 
-        BugReporter bart = new BugReporter("Bart", "Esbeek", "bart.at.fod.be");
-        System.out.println(bart);
 
         Bug polyphaga = new Bug("Polyphaga", 7, bart);
         polyphaga.showAllBugInfo();
