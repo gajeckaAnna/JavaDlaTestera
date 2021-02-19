@@ -35,37 +35,34 @@ public class AdjustVolume {
 
         personalLaptop.volumeDown(30); //personalLaptop.volumeLevel = 0
 
-
-        Computer officeComputer = new PC("Office Computer", "Lenovo", 1000, 128);
-
-        //officeComputer.volumeUp
-        officeComputer.volumeUp(); //volumeLevel = 1
-
-        officeComputer.volumeUp(19); //volumeLevel = 20
-
-        officeComputer.volumeUp(-20); //volumeLevel = 20
-
-        officeComputer.volumeUp(0); //volumeLevel = 20
-
-        officeComputer.volumeUp(90); //volumeLevel = 100
-
-        //officeComputer.volumeDown
-        officeComputer.volumeDown(); //volumeLevel = 99
-
-        officeComputer.volumeDown(10); //volumeLevel = 89
-
-        officeComputer.volumeDown(-10); //volumeLevel = 89
-
-        officeComputer.volumeDown(49); //volumeLevel = 40
-
-        officeComputer.volumeDown(0);
-
-        officeComputer.volumeDown(50); //volumeLevel = 0
-
-
-
-
-
+//
+//        Computer officeComputer = new PC("Office Computer", "Lenovo", 1000, 128);
+//
+//        //officeComputer.volumeUp
+//        officeComputer.volumeUp(); //volumeLevel = 1
+//
+//        officeComputer.volumeUp(19); //volumeLevel = 20
+//
+//        officeComputer.volumeUp(-20); //volumeLevel = 20
+//
+//        officeComputer.volumeUp(0); //volumeLevel = 20
+//
+//        officeComputer.volumeUp(90); //volumeLevel = 100
+//
+//        //officeComputer.volumeDown
+//        officeComputer.volumeDown(); //volumeLevel = 99
+//
+//        officeComputer.volumeDown(10); //volumeLevel = 89
+//
+//        officeComputer.volumeDown(-10); //volumeLevel = 89
+//
+//        officeComputer.volumeDown(49); //volumeLevel = 40
+//
+//        officeComputer.volumeDown(0);
+//
+//        officeComputer.volumeDown(50); //volumeLevel = 0
+//
+//
 
 
     }
