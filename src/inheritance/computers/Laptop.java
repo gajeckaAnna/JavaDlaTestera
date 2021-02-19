@@ -40,31 +40,40 @@ public class Laptop extends Computer {
         return (volumeLevel >= 100) ? volumeLevel = 100 : volumeLevel;
     }
 
-        @Override
-        public int volumeDown(){
-            return volumeDown(5);
-        }
+    @Override
+    public int volumeDown() {
+        return volumeDown(5);
+    }
 
-        @Override
-        public int volumeDown(int adjustVolumeLevel){
-            if (adjustVolumeLevel < 0) {
-                adjustVolumeLevel = 0;
-                System.out.println("U-uh. Positive numbers only.");
-                return volumeLevel;
-            }
-            volumeLevel -= adjustVolumeLevel;
-            if (volumeLevel < 0) {
-                System.out.println(adjustVolumeLevel + "? Too much. I set my volume level to 0!");
-                return volumeLevel = 0;
-            } if (adjustVolumeLevel == 0) {
-                System.out.println(adjustVolumeLevel + "? Neither high, neither low. My volume level did not change.");
-                return volumeLevel;
-            } else {
-                System.out.println("My new volume level is down to " + volumeLevel + ".");
-                return volumeLevel;
-            }
+    @Override
+    public int volumeDown(int adjustVolumeLevel) {
+        adjustVolumeLevel = checkNegativeVolume(adjustVolumeLevel);
+        volumeLevel -= adjustVolumeLevel;
+        return checkLowerVolume(adjustVolumeLevel);
+    }
+
+    private int checkNegativeVolume(int adjustVolumeLevel) {
+        if (adjustVolumeLevel < 0) {
+            adjustVolumeLevel = 0;
+            System.out.println("U-uh. Positive numbers only.");
+        }
+        return adjustVolumeLevel;
+    }
+
+    private int checkLowerVolume(int adjustVolumeLevel) {
+        if (volumeLevel < 0) {
+            System.out.println(adjustVolumeLevel + "? Too much. I set my volume level to 0!");
+            return volumeLevel = 0;
+        }
+        if (adjustVolumeLevel == 0) {
+            System.out.println(adjustVolumeLevel + "? Neither high, neither low. My volume level did not change.");
+            return volumeLevel;
+        } else {
+            System.out.println("My new volume level is down to " + volumeLevel + ".");
+            return volumeLevel;
         }
     }
+}
 
 
 
