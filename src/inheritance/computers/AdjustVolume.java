@@ -6,21 +6,21 @@ public class AdjustVolume {
         Computer personalLaptop = new Laptop("Personal laptop", "Asus", 300, 8, 99);
 
         //personalLaptop.volumeLevel = 0
-        System.out.println(((Laptop)personalLaptop).volumeUp()); // Type casting
+        System.out.println(((Laptop) personalLaptop).volumeUp()); // Type casting
         //personalLaptop.volumeLevel = 5
         System.out.println(personalLaptop.volumeUp()); // volumeUp(); created as abstract method in Computer
         //personalLaptop.volumeLevel = 10
 
-        //personalLaptop.volumeUp
-        personalLaptop.volumeUp(20); //personalLaptop.volumeLevel = 30
+        //personalLaptop.volumeUp0
+        System.out.println(personalLaptop.volumeUp(20)); //personalLaptop.volumeLevel = 30
 
-        personalLaptop.volumeUp(20); //personalLaptop.volumeLevel = 50
+        System.out.println(personalLaptop.volumeUp(20)); //personalLaptop.volumeLevel = 50
 
-        personalLaptop.volumeUp(0); //personalLaptop.volumeLevel = 50
+        System.out.println(personalLaptop.volumeUp(0));//personalLaptop.volumeLevel = 50
 
-        personalLaptop.volumeUp(120); //personalLaptop.volumeLevel = 100
+        System.out.println(personalLaptop.volumeUp(120)); //personalLaptop.volumeLevel = 100
 
-        personalLaptop.volumeUp(-70); //personalLaptop.volumeLevel = 100
+        System.out.println(personalLaptop.volumeUp(-70)); //personalLaptop.volumeLevel = 100
 
         //personalLaptop.volumeDown
         personalLaptop.volumeDown(-70); //personalLaptop.volumeLevel = 100
@@ -31,7 +31,7 @@ public class AdjustVolume {
 
         personalLaptop.volumeDown(50);//personalLaptop.volumeLevel = 20
 
-        personalLaptop.volumeDown(); //personalLaptop.volumeLevel = 18
+        personalLaptop.volumeDown(); //personalLaptop.volumeLevel = 15
 
         personalLaptop.volumeDown(30); //personalLaptop.volumeLevel = 0
 
