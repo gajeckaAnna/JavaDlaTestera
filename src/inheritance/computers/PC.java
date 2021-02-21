@@ -68,13 +68,19 @@ public class PC extends Computer {
             System.out.println(adjustVolumeLevel + "? I have standards I don't plan on lowering for anybody. " +
                     "I set my volume level to 0!");
             return volumeLevel = 0;
-        } if (adjustVolumeLevel == 0) {
+        }
+        if (adjustVolumeLevel == 0) {
             System.out.println(adjustVolumeLevel + "? Guurl. My volume level did not change.");
             return volumeLevel;
         } else {
             System.out.println(adjustVolumeLevel + "? My new volume level is down to " + volumeLevel + ".");
             return volumeLevel;
         }
+    }
+
+    public int getVolumeLevel() {
+        System.out.println("My current volume level is " + volumeLevel + ".");
+        return volumeLevel;
     }
 }
 

@@ -70,7 +70,10 @@ public class Laptop extends Computer {
         return checkLowerVolume(adjustVolumeLevel);
     }
 
-
+    public int getVolumeLevel() {
+        System.out.println("My current volume level is " + volumeLevel + ".");
+        return volumeLevel;
+    }
 }
 
 
