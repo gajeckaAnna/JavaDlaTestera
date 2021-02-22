@@ -40,34 +40,14 @@ public class Laptop extends Computer {
         return (volumeLevel >= 100) ? volumeLevel = 100 : volumeLevel;
     }
 
-    @Override
     public int volumeDown() {
         return volumeDown(5);
     }
 
-    private int checkNegativeVolume(int adjustVolumeLevel) {
-        if (adjustVolumeLevel < 0) {
-            adjustVolumeLevel = 0;
-            System.out.println("U-uh. Positive numbers only.");
-        }
-        return adjustVolumeLevel;
-    }
-
-    private int checkLowerVolume(int adjustVolumeLevel) {
-        if (volumeLevel <= 0) {
-            System.out.println(adjustVolumeLevel + "? Too much. I set my volume level to 0!");
-            return volumeLevel = 0;
-        } else {
-            System.out.println("My new volume level is down to " + volumeLevel + ".");
-            return volumeLevel;
-        }
-    }
-
     @Override
     public int volumeDown(int adjustVolumeLevel) {
-        adjustVolumeLevel = checkNegativeVolume(adjustVolumeLevel);
-        volumeLevel -= adjustVolumeLevel;
-        return checkLowerVolume(adjustVolumeLevel);
+        volumeLevel -= Math.abs(adjustVolumeLevel);
+        return (volumeLevel <= 0) ? volumeLevel = 0 : volumeLevel;
     }
 
     public int getVolumeLevel() {
