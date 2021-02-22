@@ -13,69 +13,70 @@ public class AdjustVolume {
         ((Laptop) personalLaptop).getVolumeLevel();//personalLaptop.volumeLevel = 10
 
         //personalLaptop.volumeUp0
-        personalLaptop.volumeUp(20); //personalLaptop.volumeLevel = 30
+        personalLaptop.volumeUp(20);
         personalLaptop.getVolumeLevel();
 
-        personalLaptop.volumeUp(20); //personalLaptop.volumeLevel = 50
+        personalLaptop.volumeUp(20);
         personalLaptop.getVolumeLevel();
 
-        personalLaptop.volumeUp(0);//personalLaptop.volumeLevel = 50
+        personalLaptop.volumeUp(0);
         personalLaptop.getVolumeLevel();
 
-        personalLaptop.volumeUp(120); //personalLaptop.volumeLevel = 100
+        personalLaptop.volumeUp(120);
         personalLaptop.getVolumeLevel();
 
-        personalLaptop.volumeUp(-70); //personalLaptop.volumeLevel = 100
+        personalLaptop.volumeUp(-30);
         personalLaptop.getVolumeLevel();
 
         //personalLaptop.volumeDown
-        personalLaptop.volumeDown(-70); //personalLaptop.volumeLevel = 100
+        personalLaptop.volumeDown(-30);
         personalLaptop.getVolumeLevel();
 
-        personalLaptop.volumeDown(30); //personalLaptop.volumeLevel = 70
+        personalLaptop.volumeDown(40);
         personalLaptop.getVolumeLevel();
 
-        personalLaptop.volumeDown(0);//personalLaptop.volumeLevel = 70
+        personalLaptop.volumeDown(0);
         personalLaptop.getVolumeLevel();
 
-        personalLaptop.volumeDown(50);//personalLaptop.volumeLevel = 20
+        personalLaptop.volumeDown();
         personalLaptop.getVolumeLevel();
 
-        personalLaptop.volumeDown(); //personalLaptop.volumeLevel = 15
+        personalLaptop.volumeDown(50);
         personalLaptop.getVolumeLevel();
 
-        personalLaptop.volumeDown(30); //personalLaptop.volumeLevel = 0
-        personalLaptop.getVolumeLevel();
+        Computer officeComputer = new PC("Office Computer", "Lenovo", 1000, 128);
 
-//
-//        Computer officeComputer = new PC("Office Computer", "Lenovo", 1000, 128);
-//
-//        //officeComputer.volumeUp
-//        officeComputer.volumeUp(); //volumeLevel = 1
-//
-//        officeComputer.volumeUp(19); //volumeLevel = 20
-//
-//        officeComputer.volumeUp(-20); //volumeLevel = 20
-//
-//        officeComputer.volumeUp(0); //volumeLevel = 20
-//
-//        officeComputer.volumeUp(90); //volumeLevel = 100
-//
-//        //officeComputer.volumeDown
-//        officeComputer.volumeDown(); //volumeLevel = 99
-//
-//        officeComputer.volumeDown(10); //volumeLevel = 89
-//
-//        officeComputer.volumeDown(-10); //volumeLevel = 89
-//
-//        officeComputer.volumeDown(49); //volumeLevel = 40
-//
-//        officeComputer.volumeDown(0);
-//
-//        officeComputer.volumeDown(50); //volumeLevel = 0
-//
-//
+        //officeComputer.volumeUp
+        officeComputer.volumeUp();
+        officeComputer.getVolumeLevel();
 
+        officeComputer.volumeUp(19);
+        officeComputer.getVolumeLevel();
+
+        officeComputer.volumeUp(-20);
+        officeComputer.getVolumeLevel();
+
+        officeComputer.volumeUp(0);
+        officeComputer.getVolumeLevel();
+
+        officeComputer.volumeUp(90);
+        officeComputer.getVolumeLevel();
+
+        //officeComputer.volumeDown
+        officeComputer.volumeDown();
+        officeComputer.getVolumeLevel();
+
+        officeComputer.volumeDown(10);
+        officeComputer.getVolumeLevel();
+
+        officeComputer.volumeDown(-10);
+        officeComputer.getVolumeLevel();
+
+        officeComputer.volumeDown(55);
+        officeComputer.getVolumeLevel();
+
+        officeComputer.volumeDown(45);
+        officeComputer.getVolumeLevel();
 
     }
 }
