@@ -32,5 +32,9 @@ public class MainApp {
         testTeam.remove("Nicolas");
         testTeam.remove("David");
         System.out.println(testTeam);
+
+        String name = testTeam.get(5);
+        System.out.println(name);
+
     }
 }
