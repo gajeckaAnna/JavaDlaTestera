@@ -36,5 +36,37 @@ public class MainApp {
         String name = testTeam.get(5);
         System.out.println(name);
 
+        System.out.println(testTeam.size());
+        System.out.println(testTeam.isEmpty());
+        System.out.println(testTeam.contains("Sasa"));
+        System.out.println(testTeam.contains("Ania"));
+
+        ArrayList<String> devTeam = new ArrayList<>();
+        devTeam.add("Arno");
+        devTeam.add("Alexander");
+        devTeam.add("Frans");
+        devTeam.add("Wim");
+        devTeam.add("Justin");
+        devTeam.add("Simon");
+
+        ArrayList<String> analists = new ArrayList<>();
+        analists.add("Housseyn");
+        analists.add("Simon");
+
+        ArrayList<String> pms = new ArrayList<>();
+        pms.add("Luc");
+        pms.add("Erwin");
+
+        ArrayList<String> standUp = new ArrayList<>();
+        standUp.addAll(testTeam);
+        standUp.addAll(devTeam);
+        standUp.addAll(analists);
+        standUp.addAll(pms);
+        System.out.println(standUp);
+
+        standUp.removeAll(pms);
+        System.out.println(standUp);
+
+
     }
 }
