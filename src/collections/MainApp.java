@@ -19,5 +19,12 @@ public class MainApp {
         testTeam.add("David");
         testTeam.add("Nicolas");
         testTeam.add("Marc");
+
+        System.out.println(testTeam);
+
+        for (String name : testTeam) {
+            System.out.println(name);
+        }
+
     }
 }
