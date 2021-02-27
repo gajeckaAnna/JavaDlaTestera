@@ -26,5 +26,11 @@ public class MainApp {
             System.out.println(name);
         }
 
+        testTeam.remove(3);
+        System.out.println(testTeam);
+
+        testTeam.remove("Nicolas");
+        testTeam.remove("David");
+        System.out.println(testTeam);
     }
 }
