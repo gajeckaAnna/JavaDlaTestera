@@ -1,6 +1,7 @@
 package collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MainApp {
 
@@ -65,6 +66,12 @@ public class MainApp {
         System.out.println(standUp);
 
         standUp.removeAll(pms);
+        System.out.println(standUp);
+
+        Collections.sort(standUp);
+        System.out.println(standUp);
+
+        Collections.reverse(standUp);
         System.out.println(standUp);
 
 
