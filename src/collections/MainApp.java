@@ -2,12 +2,13 @@ package collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class MainApp {
 
     public static void main(String[] args) {
 
-        ArrayList<String> testTeam = new ArrayList<>();
+        List<String> testTeam = new ArrayList<>();
         testTeam.add("Fabienne");
         testTeam.add("Vincent");
         testTeam.add("Ania");
@@ -42,7 +43,7 @@ public class MainApp {
         System.out.println(testTeam.contains("Sasa"));
         System.out.println(testTeam.contains("Ania"));
 
-        ArrayList<String> devTeam = new ArrayList<>();
+        List<String> devTeam = new ArrayList<>();
         devTeam.add("Arno");
         devTeam.add("Alexander");
         devTeam.add("Frans");
@@ -50,15 +51,15 @@ public class MainApp {
         devTeam.add("Justin");
         devTeam.add("Simon");
 
-        ArrayList<String> analists = new ArrayList<>();
+        List<String> analists = new ArrayList<>();
         analists.add("Housseyn");
         analists.add("Simon");
 
-        ArrayList<String> pms = new ArrayList<>();
+        List<String> pms = new ArrayList<>();
         pms.add("Luc");
         pms.add("Erwin");
 
-        ArrayList<String> standUp = new ArrayList<>();
+        List<String> standUp = new ArrayList<>();
         standUp.addAll(testTeam);
         standUp.addAll(devTeam);
         standUp.addAll(analists);
