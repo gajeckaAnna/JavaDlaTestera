@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class MainApp {
+public class StandUp {
 
     public static void main(String[] args) {
 
@@ -74,7 +74,6 @@ public class MainApp {
 
         Collections.reverse(standUp);
         System.out.println(standUp);
-
 
     }
 }
