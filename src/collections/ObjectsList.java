@@ -12,5 +12,10 @@ public class ObjectsList {
         users.add(new User("TamaNocnaMara", "Doe", 17));
         users.add(new User("Martantula", "Doe", 17));
 
+        for (User user : users) {
+            System.out.println(user.getFirstName());
+        }
+
+
     }
 }
