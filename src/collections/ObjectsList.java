@@ -25,5 +25,13 @@ public class ObjectsList {
         Collections.sort(users, Comparator.comparing(User::getFirstName));
         System.out.println(users);
 
+        Collections.sort(users, Comparator.comparingInt(User::getAge));
+        System.out.println(users);
+
+        Collections.sort(users, Comparator.comparingInt(User::getAge).reversed());
+        for (User user : users) {
+            System.out.println(user.getFirstName() + ", " + user.getAge() + "(l.)");
+        }
+
     }
 }
