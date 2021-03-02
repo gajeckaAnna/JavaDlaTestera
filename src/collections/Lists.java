@@ -21,7 +21,11 @@ public class Lists {
         technicolor.add(1, "turquoise");
         System.out.println(technicolor);
 
-        technicolor.add(1, "navy blue");
+        technicolor.add(4, "navy blue");
+        System.out.println(technicolor);
+
+        technicolor.remove("green");
+        technicolor.remove(2);
         System.out.println(technicolor);
 
     }
