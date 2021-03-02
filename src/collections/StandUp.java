@@ -66,6 +66,10 @@ public class StandUp {
         standUp.addAll(pms);
         System.out.println(standUp);
 
+        pms.remove("Erwin");
+        pms.add("Dirk");
+        System.out.println(pms);
+
         standUp.removeAll(pms);
         System.out.println(standUp);
 
