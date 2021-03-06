@@ -2,6 +2,7 @@ package collections;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Names {
 
@@ -20,6 +21,11 @@ public class Names {
         System.out.println(names.size());
 
         for (String name : names) {
+            System.out.println(name);
+        }
+
+        Set<String> sortedNames = new TreeSet<>(names);
+        for (String name : sortedNames) {
             System.out.println(name);
         }
 
