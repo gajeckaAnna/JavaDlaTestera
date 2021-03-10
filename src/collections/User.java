@@ -2,7 +2,7 @@ package collections;
 
 import java.util.Objects;
 
-public class User {
+public class User implements Comparable<User> {
 
     String firstName;
     String lastName;
@@ -58,5 +58,14 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName, age);
+    }
+
+    @Override
+    public int compareTo(User user) {
+        int compareResult = this.getFirstName().compareTo(user.getFirstName());
+        if (compareResult == 0) {
+            compareResult = this.getLastName().compareTo(user.getLastName());
+        }
+        return compareResult;
     }
 }

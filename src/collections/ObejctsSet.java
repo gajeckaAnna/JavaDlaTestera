@@ -19,5 +19,12 @@ public class ObejctsSet {
         for (User user : users) {
             System.out.println(user.getFirstName() + " " + user.getLastName());
         }
+
+        Set<User> sortedUser = new TreeSet<>(users);
+
+        for (User user : sortedUser) {
+            System.out.println(user.getFirstName() + " " + user.getLastName());
+        }
+
     }
 }
